@@ -8,6 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .active{
+            background-color: #FF1F3D;
+            color: white;
+        }
+    </style>
 </head>
 
 <body class="w-11/12 mx-auto">
@@ -20,11 +26,11 @@
 
     <!-- Dynamic Categories -->
     <section id="category-container" class="flex justify-center gap-4 mt-5 ">
-        <button class="btn btn-sm bg-[#FF1F3D] text-white">All</button>
+        <button onclick="loadVideos()" class="btn btn-sm bg-[#FF1F3D] text-white">All</button>
     </section>
-
+<!--Handles no video found-->
     <!--Video Container-->
-    <section id="video-Container" class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
+    <section id="video-Container" class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 mx-auto gap-4 mt-10">
     </section>
     <script src="./script/index.js"></script>
 </body>
